@@ -1,3 +1,9 @@
 .pokemon-card{
     background-color: brown;
 }
+
+.pokemon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

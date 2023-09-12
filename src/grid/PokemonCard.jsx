@@ -5,25 +5,17 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import pokemonImage from "../assets/Pokeball.png";
 
-export function PokemonCard() {
+export function PokemonCard({ pokemon }) {
   return (
     <div className="pokemon-card">
-      <Card sx={{ maxWidth: 345 }}>
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
+      <Card sx={{ maxWidth: 345, minWidth: 200 }} className="pokemon-container">
+        <img width="50%" src={pokemonImage} alt="green iguana" />
+        <CardActionArea className="pokemon-container">
           <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+            <Typography gutterBottom variant="h4" component="div">
+              {pokemon.name.toUpperCase()}
             </Typography>
           </CardContent>
         </CardActionArea>
