@@ -6,6 +6,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import pokemonImage from "../assets/Pokeball.png";
+import {Link} from 'react-router-dom'
 
 export function PokemonCard({ pokemon }) {
   return (
@@ -21,7 +22,7 @@ export function PokemonCard({ pokemon }) {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            Share
+            <Link to={`pokemon/${pokemon.name}`} >Detail</Link>
           </Button>
         </CardActions>
       </Card>
