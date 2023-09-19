@@ -2,11 +2,10 @@ import * as React from "react";
 import "./pokemonCard.css";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import pokemonImage from "../assets/Pokeball.png";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export function PokemonCard({ pokemon }) {
   return (
@@ -22,11 +21,10 @@ export function PokemonCard({ pokemon }) {
         </CardActionArea>
         <CardActions>
           <Button size="small" color="primary">
-            <Link to={`pokemon/${pokemon.name}`} >Detail</Link>
+            <Link to={`pokemon/${pokemon.name}`}>Detail</Link>
           </Button>
         </CardActions>
       </Card>
-      {/*  */}
     </div>
   );
 }
