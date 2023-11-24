@@ -25,6 +25,21 @@ export function PokemonCard({ pokemon }) {
           </Button>
         </CardActions>
       </Card>
+      <Card sx={{ maxWidth: 345, minWidth: 200 }} className="pokemon-container">
+        <img width="50%" src={pokemonImage} alt="green iguana" />
+        <CardActionArea className="pokemon-container">
+          <CardContent>
+            <Typography gutterBottom variant="h4" component="div">
+              {pokemon.name.toUpperCase()}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button size="small" color="primary">
+            <Link to={`pokemon/${pokemon.name}`}>Detail</Link>
+          </Button>
+        </CardActions>
+      </Card>
     </div>
   );
 }
