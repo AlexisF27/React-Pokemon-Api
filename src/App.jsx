@@ -14,10 +14,6 @@ function App() {
         <div className="comtent">
           <Switch>
             <Route exact path="/">
-              <Launcher/>
-            </Route>
-            <Route path="/pokemon/:name">
-              <PokemonDetail/>
             </Route>
 
           </Switch>
@@ -29,3 +25,4 @@ function App() {
 }
 
 export default App;
+
