@@ -15,7 +15,8 @@ function App() {
           <Switch>
             <Route exact path="/">
             </Route>
-
+            <Route exact path="/pokemon/{id}">
+            </Route>
           </Switch>
         </div>
       </div>
